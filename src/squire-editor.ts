@@ -245,7 +245,7 @@ export class SquireEditor extends LitElement {
 
   
   public set value(html : string) {
-    this._squire?.setHTML(html);
+    this._squire!.setHTML(html);
   }
   
   public get value() : string {
@@ -266,7 +266,11 @@ export class SquireEditor extends LitElement {
     const buttons = this.renderRoot.querySelectorAll('.squire-toolbar button')! as NodeListOf<HTMLButtonElement>;
 
     squire.setHTML(textarea.value);
-    squire.addEventListener("input", () => textarea.value = squire.getHTML());
+    squire.addEventListener("input", () => {
+      this.dispatchEvent(new InputEvent("input", {bubbles: true, composed: true}));
+      textarea.value = squire.getHTML();
+    });
+    squire.addEventListener("blur", () => this.dispatchEvent(new Event("blur", {bubbles: true, composed: true})));
 
     // Make sure cursor stays into view
     // @link https://github.com/fastmail/overture/blob/master/source/views/controls/RichTextView.js#L347

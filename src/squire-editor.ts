@@ -271,9 +271,6 @@ export class SquireEditor extends LitElement {
       textarea.value = squire.getHTML();
     });
     squire.addEventListener("blur", () => this.dispatchEvent(new Event("blur", {bubbles: true, composed: true})));
-
-    // Make sure cursor stays into view
-    // @link https://github.com/fastmail/overture/blob/master/source/views/controls/RichTextView.js#L347
     squire.addEventListener("cursor", () => {
       // Check which formatting options are enabled ?
       buttons.forEach(btn => {

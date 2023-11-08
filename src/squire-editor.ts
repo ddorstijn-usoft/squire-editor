@@ -272,7 +272,7 @@ export class SquireEditor extends LitElement {
       this.dispatchEvent(new InputEvent("input", {bubbles: true, composed: true}));
       textarea.value = squire.getHTML();
     });
-    squire.addEventListener("blur", () => this.dispatchEvent(new Event("blur", {bubbles: true, composed: true})));
+    squire.addEventListener("blur", () => this.dispatchEvent(new FocusEvent("blur", {bubbles: true, composed: true})));
     squire.addEventListener("cursor", () => {
       // Check which formatting options are enabled ?
       buttons.forEach(btn => {

@@ -25,6 +25,10 @@ squire-editor textarea {
   resize: none;
 }
 
+squire-editor [hidden] {
+  display: none !important;
+}
+
 squire-editor .squire-toolbar {
   background: #efefef;
 }

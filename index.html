@@ -3,10 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test page</title>
 
     <script type="module" src="/src/squire-editor.ts"></script>
+    <script>
+      setTimeout(() => {
+        document.querySelector('#test').appendChild(document.querySelector('squire-editor'));
+      }, 2500);
+    </script>
   </head>
   <body>
+    <div>
+      <div id="test" />
+    </div>
     <squire-editor allowpaste />
   </body>
 </html>

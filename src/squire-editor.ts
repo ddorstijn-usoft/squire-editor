@@ -258,6 +258,10 @@ export class SquireEditor extends LitElement {
   private _squire: Squire | undefined;
 
   firstUpdated() {
+    this.initSquire();
+  }
+
+  initSquire() {
     this._squire = new Squire(this.renderRoot.querySelector('.squire-input')!, {
       blockTag: 'div',
       sanitizeToDOMFragment: (html) => sanitize(html, { RETURN_DOM_FRAGMENT: true }),
@@ -341,7 +345,7 @@ export class SquireEditor extends LitElement {
         }
       )}
       </div>
-      <textarea hidden></textarea>
+      <textarea title="Raw input" name="squire-raw-input" placeholder="No content yet..." hidden></textarea>
       <div class="squire-input"></div>
     `
   }

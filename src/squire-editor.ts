@@ -263,7 +263,6 @@ export class SquireEditor extends LitElement {
 
   initSquire() {
     this._squire = new Squire(this.renderRoot.querySelector('.squire-input')!, {
-      blockTag: 'div',
       sanitizeToDOMFragment: (html) => sanitize(html, { RETURN_DOM_FRAGMENT: true }),
     });
 

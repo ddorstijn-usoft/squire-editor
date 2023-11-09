@@ -10,12 +10,12 @@
   },
   "dependencies": {
     "isomorphic-dompurify": "^1.9.0",
-    "lit": "^2.7.6",
-    "squire-rte": "^2.2.4"
+    "lit": "^3.0.2",
+    "squire-rte": "^2.2.5"
   },
   "devDependencies": {
-    "@types/node": "^20.8.9",
-    "typescript": "^5.0.2",
-    "vite": "^4.4.5"
+    "@types/node": "^20.9.0",
+    "typescript": "^5.2.2",
+    "vite": "^4.5.0"
   }
 }

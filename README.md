@@ -1,4 +1,4 @@
-![afbeelding](https://github.com/ddorstijn-usoft/squire-editor/assets/1730282/cb6ae05e-e136-45fd-a42d-e7607dbf6a40)
+![afbeelding](https://github.com/ddorstijn-usoft/squire-editor/assets/1730282/cfcca8d3-ebf4-40fd-9036-7feb216927a4)
 
 
 # squire-editor

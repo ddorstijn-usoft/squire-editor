@@ -1,3 +1,6 @@
+![afbeelding](https://github.com/ddorstijn-usoft/squire-editor/assets/1730282/cb6ae05e-e136-45fd-a42d-e7607dbf6a40)
+
+
 # squire-editor
 
 Web component frontend for the [Squire](https://github.com/fastmail/Squire) editor. It is a reimplementation of [this wonderful implementation](https://blog.lekoala.be/finding-a-lightweight-yet-extensible-wysiwyg-editor) by LeKoala.
